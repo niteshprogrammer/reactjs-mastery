@@ -1,0 +1,36 @@
+.sidebar{
+  border: 2px solid #ccc;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  width: 20%;
+}
+
+.sidebar__icons{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar__icon{
+  align-items: center;
+  /* border: 2px solid #efefef; */
+  display: flex;
+  padding: 16px 0 14px;
+}
+
+.sidebar__icon:hover{
+  /* background: #e9e9e9;
+  background: #f9f9f9; */
+  background: #f0f0f0;
+}
+
+.sidebar__icon .sidebar__title{
+  color: #030303;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.4rem;
+  text-align: center;
+}

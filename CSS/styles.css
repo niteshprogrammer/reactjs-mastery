@@ -1,0 +1,151 @@
+@import url("https://www.fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #333;
+  color: #f1f1f1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  /* border: 2px dotted #ffc400; */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0.7vh 1vh;
+  width: 80%;
+}
+
+.header-title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.7rem;
+  padding: 0.7vh;
+  text-align: center;
+}
+
+.react-js-text{
+  color: #61dafb;
+  white-space: nowrap;
+}
+
+.text-color{
+  color: #ffc05cdc;
+}
+
+.time-period{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1.3vh;
+  width: 100%;
+}
+
+.deadline{
+  background: #555;
+  border: 2px solid rgb(149, 144, 144);
+  border-radius: 1.3rem;
+  color: #61dafb;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.9vh 2vh;
+  outline: none;
+}
+
+.build-world{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(7, 40vh);
+  grid-gap: 7vh 0vw;
+}
+
+.clones{
+  align-self: center;
+  border: 2px solid #ccc;
+  height: 30vh;
+  justify-self: center;
+  width: 60vw;
+}
+
+.clones iframe{
+  height: 100%;
+  width: 100%;
+}
+/* ReactJs Logo Animation */
+
+.logo-motion{
+  animation: react-logo-motion 1.3s linear reverse infinite;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.logo-motion-reverse{
+  animation: react-logo-motion 1.3s linear infinite;
+}
+
+@keyframes react-logo-motion{
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+.company-footer{
+  border: 1px solid #ffc300;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  padding: 0.9vh;
+  text-align: center;
+}
+
+@media screen and (min-width: 824px) and (max-width: 892px){
+  .build-world{
+    grid-template-rows: repeat(7, 33vh);
+  }
+  .clones{
+    height: 29vh;
+    width: 55vw;
+  }
+}
+
+@media screen and (min-width: 893px) and (max-width: 1920px) {
+  .build-world{
+    grid-template-rows: repeat(7, 70vh);
+  }
+  .clones{
+    height: 68vh;
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header-title{
+    font-size: 1.5rem;
+  }
+  .time-period{
+    flex-direction: column;
+  }
+  .deadline{
+    align-self: center;
+    font-size: 1rem;
+    justify-self: center;
+    margin: 0.7vh;
+    text-align: center;
+    width: 100%;
+  }
+  .build-world{
+    grid-template-rows: repeat(7, 21vh);
+    /* margin-top: 3vh;
+    margin-bottom: 3vh;
+     */
+     margin: 3vh 0;
+  }
+  .clones{
+    height: 18vh;
+    max-width: 62vw;
+  }
+  .company-footer p{
+    font-size: 1rem;
+  }
+}

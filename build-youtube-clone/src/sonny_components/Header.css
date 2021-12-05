@@ -1,0 +1,118 @@
+@import url("https://www.fonts.googleapis.com/css2?family:wght@300&display=swap");
+
+.header{
+  align-items: center;
+  background-color: white;
+  /* border: 2px solid #444; */
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+.header__logo{
+  height: 29px;
+  margin-left: 16px;
+  object-fit: contain;
+}
+
+.header__left{
+  align-items: center;
+  display: flex;
+  margin-left: 6px;
+}
+
+.header__location{
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.header__locationText{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.6rem;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+.header__input{
+  align-items: center;
+  border: 1px solid lightgrey;
+  box-shadow: 0 1px 3px rgb(238, 236, 236);
+  display: flex;
+  position: relative;
+  width: 44vw;
+}
+
+.header__input > input{
+  align-items: center;
+  flex: 1;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  padding: 12px 5px 10px 5px;
+  text-align: left;
+}
+
+.header__searchButton{
+  background: #fefefe;
+  border-left: 1px solid lightgrey;
+  color: grey;
+  justify-self: flex-end;
+  margin-right: 7px;
+  padding: 6px auto;
+  width: 50px !important;
+}
+
+.header__searchButton:hover{
+  background: #f0f0f0;
+}
+.header__voiceSearch{
+  background-color: white;
+  border-top: 1px solid white;
+  position: absolute;
+  right: -40px;
+}
+
+.header__right{
+  align-items: center;
+  display: flex;
+}
+
+.header__icon{
+  margin-right: 16px;
+}
+
+/* RWD: This CSS code is applied for making the UI responsive across devices. */
+
+@media screen and (max-width: 833px){
+  .header__input{
+    width: 24vw;
+  }
+  
+  .header__input > input{
+    max-width: 65%;
+  }
+
+}
+
+@media screen and (max-width: 733px){
+  .header__input{
+    border: none;
+    justify-content: center;
+  }
+  .header__input > input{
+    display: none;
+  }
+
+  .header__searchButton{
+    border: 1px solid lightgrey;
+  }
+  
+  .header__voiceSearch{
+    position: relative;
+    left: 10px;
+  }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+.recommendedVideos{
+  background: #f9f9f9;
+  flex: 0.8;
+}
+
+/* Styling hr tag */
+
+.recommendedVideos > hr{
+  height: 1px;
+  border: 0px;
+  background: lightgrey;
+}
+
+.recommended__title{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.recommendedVideos__tags{
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  color: grey;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  margin-right: 11px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.recommendedVideos__tags.active{
+  background: rgb(0, 0, 2);
+  color: #f1f2f2;
+  cursor: pointer;
+}
+
+.recommendedVideos__tags:hover:not(.active){
+  background: #f0f0f0;
+  cursor: pointer;
+}
+
+.recommendedVideos__videos{
+  display: flex;
+  flex-wrap: wrap;
+}
